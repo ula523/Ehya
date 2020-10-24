@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин Ehya</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="logo">
+            <img src="img/Logo.png" alt="Логотип" class="logo__image">
+          </a>
+          <div class="navbar navbar--mobile_fixed">
+            <ul class="navbar__menu">
+              <li><a href="#main" class="navbar__link link">Главная</a></li>
+              <li><a href="#new-collection" class="navbar__link link">Новинки</a></li>
+              <li><a href="#trends" class="navbar__link link">Тренды</a></li>
+              <li><a href="#reviews" class="navbar__link link">Отзывы</a></li>
+              <li><a href="#contacts" class="navbar__link link">Контакты</a></li>
+            </ul>
+            <a href="#" data-toggle="modal" data-href="#login-modal" class="navbar__button bt">Войти</a>
+          </div>
+          <button data-toggle="menu" class="menu-button ">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button> 
+        </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="#" class="mobile-menu__close">
+        <img src="img/close.svg" alt="Иконка: закрыть">
+      </a>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__link"><a href="#main"  class="link">Главная</a></li>
+        <li class="mobile-menu__link"><a href="#new-collection" class="link">Новинки</a></li>
+        <li class="mobile-menu__link"><a href="#trends" class="link">Тренды</a></li>
+        <li class="mobile-menu__link"><a href="#reviews" class="link">Отзывы</a></li>
+        <li class="mobile-menu__link"><a href="#contacts" class="link">Контакты</a></li>  
+      </ul>
+      <a href="#" data-toggle="modal" data-href="#login-modal" class="mobile-menu__button bt">Войти</a>
+    </div>
+  </header>
+  <!--/.header-->
+  <section class="main" id="main">
+    <div class="main-container">
+      <div class="main-wrapper">
+        <span class="main__subtitle tag"># READY TO BE COOL</span>
+        <h1 class="main__title">Каждый может быть крутым и модным</h1>
+        <p class="main__text">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль.
+          Всё это вы можете найти здесь. Начните сейчас.
+        </p>
+        <a href="#"  data-toggle="modal" data-href="#selection-modal" class="main__button button bt-dark">Подобрать одежду</a>
+        <div class="advantages">
+          <div class="advantages__item">
+            <img src="img/pay.svg" alt="Онлайн оплата" class="advantages__image">
+            <span class="advantages__name">Онлайн оплата</span>
+          </div>
+          <div class="advantages__item">
+            <img src="img/garant.svg" alt="Гарантия" class="advantages__image">
+            <span class="advantages__name">Гарантия</span>
+          </div>
+          <div class="advantages__item">
+            <img src="img/quality.svg" alt="Качество" class="advantages__image">
+            <span class="advantages__name">Качество</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/.main-->
+  <section class="collection" id="new-collection">
+    <div class="container">
+      <div class="collection-wrapper">
+        <div class="collection-images">
+          <img src="img/collection-1.jpg" alt="Новая коллекция" class="collection__img">
+          <div class="collection-block">
+            <img src="img/collection-2.jpg" alt="Новая коллекция" class="collection__image">
+            <img src="img/collection-3.jpg" alt="Новая коллекция" class="collection__image">
+          </div>
+        
+        </div>
+        <div class="collection-description">
+          <h2 class="title collection__title">Новая зимняя коллекция</h2>
+          <p class="collection__text">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже.
+            Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.
+          </p>
+          <a href="#" class="collection__link link-dark">Посмотреть коллекцию</a>
+          <img src="img/right.svg" alt="" class="collection__link-img">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /.collection -->
+  <section class="trends" id="trends">
+    <div class="container trends-container">
+      <div class="trends__header">
+        <h2 class="title trends__title">Тренды</h2>
+        <ul class="tabs">
+          <li data-target="#new" class="tabs__item tabs__item--active">Новинки</li>
+          <li data-target="#best" class="tabs__item">Лучшее</li>
+          <li data-target="#soon" class="tabs__item">Скоро</li>
+        </ul>
+      </div>
+      <div id="new" class="trends-content trends-content--active">
+        <div class="trends-wrapper">
+          <div class="trends__block">
+            <img src="img/trends-1.jpg" alt="Minimalist Style" class="trends__images">
+            <h3 class="trends__subtitle">Minimalist Style</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$25.7</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-2.jpg" alt="Luxury Gown " class="trends__images">
+            <h3 class="trends__subtitle">Luxury Gown</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$30.6</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-3.jpg" alt="Full Coloristy" class="trends__images">
+            <h3 class="trends__subtitle">Full Coloristy</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$25.7</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-4.jpg" alt="Pinky Winky" class="trends__images">
+            <h3 class="trends__subtitle">Pinky Winky</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$109</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-5.jpg" alt="Holiday Vibes" class="trends__images">
+            <h3 class="trends__subtitle">Holiday Vibes</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$51.2</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trend-6.jpg" alt="Swaggie Shaggy" class="trends__images">
+            <h3 class="trends__subtitle">Swaggie Shaggy</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$81.3</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-7.jpg" alt="Red Formal" class="trends__images">
+            <h3 class="trends__subtitle">Red Formal</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$66.8</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <a href="#" class="trends__block block-link link-blue">
+            <img src="img/plus.svg" alt="" class="block-link__icon">
+            <span class="block-link__text">Смотреть больше коллекций</span>
+          </a>
+        </div>
+      </div>
+      <div id="best" class="trends-content">
+        <div class="trends-wrapper">
+          <div class="trends__block">
+            <img src="img/trends-4.jpg" alt="Pinky Winky" class="trends__images">
+            <h3 class="trends__subtitle">Pinky Winky</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$109</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-5.jpg" alt="Holiday Vibes" class="trends__images">
+            <h3 class="trends__subtitle">Holiday Vibes</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$51.2</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trend-6.jpg" alt="Swaggie Shaggy" class="trends__images">
+            <h3 class="trends__subtitle">Swaggie Shaggy</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$81.3</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-7.jpg" alt="Red Formal" class="trends__images">
+            <h3 class="trends__subtitle">Red Formal</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$66.8</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="soon" class="trends-content">
+        <div class="trends-wrapper">
+          <div class="trends__block">
+            <img src="img/trends-1.jpg" alt="Minimalist Style" class="trends__images">
+            <h3 class="trends__subtitle">Minimalist Style</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$25.7</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-2.jpg" alt="Luxury Gown " class="trends__images">
+            <h3 class="trends__subtitle">Luxury Gown</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$30.6</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-3.jpg" alt="Full Coloristy" class="trends__images">
+            <h3 class="trends__subtitle">Full Coloristy</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$25.7</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+          <div class="trends__block">
+            <img src="img/trends-4.jpg" alt="Pinky Winky" class="trends__images">
+            <h3 class="trends__subtitle">Pinky Winky</h3>
+            <div class="trends__price-block">
+              <span class="trends__price">$109</span>
+              <a href="#" class="trends__button">
+                <img src="img/shopping.svg" alt="" class="trends__icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.trends -->
+  <section class="reviews" id="reviews">
+      <div class="container reviews-container">
+        <img src="img/quote-left.svg" alt="" class="reviews__icon">
+        <!-- Slider main container -->
+        <div class="reviews__swiper-container swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="reviews__swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="reviews__swiper-slide swiper-slide">
+              <h2 class="reviews__title">Отзывы</h2>
+              <p class="reviews__text">
+                Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз из
+                коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто превосходно.
+                <span class="text-min">Я с нетерпением жду новых коллекций</span> <span class="text-max">от сезона к сезону</span> 
+              </p>
+              <span class="reviews__profile">
+                Алисия Пума - клиент Fashun
+              </span>
+            </div>
+            <div class="reviews__swiper-slide swiper-slide">
+              <p class="reviews__text">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Власти использовало толку
+                языкового
+                даже океана вдали на берегу его всемогущая. Залетают журчит переписывается даже рыбными океана она великий
+                возвращайся
+                там!
+              </p>
+              <span class="reviews__profile">
+                Алисия Пума - клиент Fashun
+              </span>
+            </div>
+            <div class="reviews__swiper-slide swiper-slide">
+              <p class="reviews__text">
+                Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Жаренные родного он
+                языкового.
+                Осталось переулка парадигматическая которое толку своих, единственное рот вопрос рекламных по всей курсивных,
+                маленькая
+                маленький приставка lorem.
+              </p>
+              <span class="reviews__profile">
+                Алисия Пума - клиент Fashun
+              </span>
+            </div>
+        
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+        </div>
+      </div>
+  </section>
+    <!-- /.reviews -->
+  <section class="history">
+    <div class=" history__container">
+      <hr class="line">
+      <div class="history__container-block">
+        <div class="history-description">
+          <span class="history__subtitle tag">Истории</span>
+          <h2 class="title history__title">
+           <span class="text-min">Это</span>  История Fashun</h2>
+          <p class="history__text">
+            Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером и специалистом.
+          </p>
+          <!-- If we need navigation buttons -->
+          <div class="history-buttons">
+            <div class="history__button history__button--prev"></div>
+            <div class="history__button history__button--next"></div>
+          </div>
+        
+        </div>
+        <div class="history-swiper">
+          <!-- Slider main container -->
+          <div class="history-container swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="history-block">
+                  <div class="history-block__item">
+                    <img src="img/history-1.jpg" alt="" class="history-block__image">
+                    <div class="history-block__description">
+                      <p class="history-block__text">
+                        Mix & Match Style 01: повседневный и формальный стиль
+                      </p>
+                      <a href="#" class="history-block__link link-dark">
+                        Читать далее
+                      </a>
+                    </div>
+        
+                  </div>
+                  <div class="history-block__item">
+                    <img src="img/history-2.jpg" alt="" class="history-block__image">
+                    <div class="history-block__description">
+                      <p class="history-block__text">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </p>
+                      <a href="#" class="history-block__link link-dark">
+                        Читать далее
+                      </a>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history-block">
+                  <div class="history-block__item">
+                    <img src="img/history-1.jpg" alt="" class="history-block__image">
+                    <div class="history-block__description">
+                      <p class="history-block__text">
+                        Mix & Match Style 01: повседневный и формальный стиль
+                      </p>
+                      <a href="#" class="history-block__link link-dark">
+                        Читать далее
+                      </a>
+                    </div>
+        
+                  </div>
+                  <div class="history-block__item">
+                    <img src="img/history-2.jpg" alt="" class="history-block__image">
+                    <div class="history-block__description">
+                      <p class="history-block__text">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </p>
+                      <a href="#" class="history-block__link">
+                        Читать далее
+                      </a>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history-block">
+                  <div class="history-block__item">
+                    <img src="img/history-1.jpg" alt="" class="history-block__image">
+                    <div class="history-block__description">
+                      <p class="history-block__text">
+                        Mix & Match Style 01: повседневный и формальный стиль
+                      </p>
+                      <a href="#" class="history-block__link">
+                        Читать далее
+                      </a>
+                    </div>
+        
+                  </div>
+                  <div class="history-block__item">
+                    <img src="img/history-2.jpg" alt="" class="history-block__image">
+                    <div class="history-block__description">
+                      <p class="history-block__text">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </p>
+                      <a href="#" class="history-block__link">
+                        Читать далее
+                      </a>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.history-->
+  <section class="subscribe">
+    <div class="container subscribe-container">
+      <div class="subscribe-wrapper">
+        <div class="subscribe__description">
+          <h2 class="subscribe__title title">Подпишитесь</h2>
+          <p class="subscribe__text">
+            Напишите свой адрес электронной почты.<br> Мы будем присылать вам новости из мира моды.
+          </p>
+      
+        </div>
+        <form action="send.php" method="POST" class="subscribe__form" onsubmit="send(event, 'send.php')">
+          <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email" required>
+          <button class="subscribe__button button bt-dark">Подписаться</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- /.subscribe-->
+  <footer class="footer" id="contacts">
+    <div class="container footer-container">
+      <div class="footer-wrapper">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="img/Logo.png" alt="Логотип" class="footer-logo__image">
+          </a>
+          <span class="footer__description">
+            Интернет-магазин брендовой одежды с оплатой онлайн
+          </span>
+          <div class="footer__social-networks">
+            <a href="https://www.google.ru" class="footer__social-links" target="_blank">
+              <img src="img/google.svg" alt="Google">
+            </a>
+            <a href="https://twitter.com" class="footer__social-links" target="_blank">
+              <img src="img/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" class="footer__social-links" target="_blank">
+              <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.cn" class="footer__social-links" target="_blank">
+              <img src="img/in.svg" alt="LinkedIn">
+            </a>
+          </div>
+
+        </div>
+        <div class="footer-links">
+          <div class="footer__block">
+            <h3 class="footer__title">Навигация</h3>
+            <a href="#" class="footer__link link">Новая коллекция</a>
+            <a href="#" class="footer__link link">Трендовая одежда</a>
+            <a href="#" class="footer__link link">Истории Fashun</a>
+            <a href="#" class="footer__link link">Отзывы клиентов</a>
+            <a href="#" class="footer__link link">Вся одежда</a>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Сервисы</h3>
+            <a href="#" class="footer__link link">Рассрочка на 6 мес</a>
+            <a href="#" class="footer__link link">Кредит на 12 мес</a>
+            <a href="#" class="footer__link link">Доставка по РФ</a>
+            <a href="#" class="footer__link link">Возврат покупок</a>
+            <a href="#" class="footer__link link">Акции и кэшбек</a>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Компания</h3>
+            <a href="#" class="footer__link link">Об Ehya</a>
+            <a href="#" class="footer__link link">Правила сайта</a>
+            <a href="#" class="footer__link link">Обработка данных</a>
+            <a href="#" class="footer__link link">Вакансии</a>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Контакты</h3>
+            <a href="#" class="footer__link link">Группа Фейсбук</a>
+            <a href="#" class="footer__link link">Канал Youtube</a>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="login-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/modal-close.svg" alt="Иконка: закрыть">
+      </a>
+      <h3 class="modal__title">Вход</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Логин" name="login" minlength="4" required>
+        <input type="password" class="input modal__input phone" placeholder="Пароль"  name="password" required>
+        <button class="button modal__button">Войти</button>
+      </form>
+      
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <div class="modal" id="selection-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/modal-close.svg" alt="Иконка: закрыть">
+      </a>
+      <h3 class="modal__title">Подобрать одежду</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input " placeholder="Ваше имя" name="name" minlength="2" required>
+        <input type="tel" class="input modal__input phone" placeholder="Номер телефона" name="phone" minlength="16" required>
+      
+        <textarea class="message modal__message" placeholder="Сообщение" name="message"></textarea>
+        <button class="button modal__button">Отправить</button>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <div id="toTop"> Наверх </div>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

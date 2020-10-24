@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин брендовой одежды</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="#" class="logo">
+          <img src="img/Logo.png" alt="Логотип" class="logo__image">
+        </a>
+        <div class="navbar navbar--mobile_fixed">
+          <ul class="navbar__menu">
+            <li><a href="#" class="navbar__link">Главная</a></li>
+            <li><a href="#" class="navbar__link">Новинки</a></li>
+            <li><a href="#" class="navbar__link">Тренды</a></li>
+            <li><a href="#" class="navbar__link">Отзывы</a></li>
+            <li><a href="#" class="navbar__link">Контакты</a></li>
+          </ul>
+          <a href="#" class="navbar__button">Войти</a>
+        </div>
+        <button data-toggle="menu" class="menu-button ">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="#" class="mobile-menu__close">
+        <img src="img/close.svg" alt="Иконка: закрыть">
+      </a>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__link"><a href="#">Главная</a></li>
+        <li class="mobile-menu__link"><a href="#">Новинки</a></li>
+        <li class="mobile-menu__link"><a href="#">Тренды</a></li>
+        <li class="mobile-menu__link"><a href="#">Отзывы</a></li>
+        <li class="mobile-menu__link"><a href="#">Контакты</a></li>
+      </ul>
+      <a href="#" class="mobile-menu__button">Войти</a>
+    </div>
+  </header>
+  <section class="thanks">
+    <div class="container">
+      <h3 class="thanks__title title">Спасибо!</h3>
+      <p class="thanks__text">
+        Наш менеджер свяжется с вами в ближайшее время.
+      </p>
+    
+    <a href="index.html" class="thanks__button button">Назад</a>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-wrapper">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="img/Logo.png" alt="Логотип" class="footer-logo__image">
+          </a>
+          <span class="footer__description">
+            Интернет-магазин брендовой одежды с оплатой онлайн
+          </span>
+          <div class="footer__social-networks">
+            <a href="https://www.google.ru" class="footer__social-links" target="_blank">
+              <img src="img/google.svg" alt="Google">
+            </a>
+            <a href="https://twitter.com" class="footer__social-links" target="_blank">
+              <img src="img/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" class="footer__social-links" target="_blank">
+              <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.cn" class="footer__social-links" target="_blank">
+              <img src="img/in.svg" alt="LinkedIn">
+            </a>
+          </div>
+
+        </div>
+        <div class="footer-links">
+          <div class="footer__block">
+            <h3 class="footer__title">Навигация</h3>
+            <a href="#" class="footer__link link">Новая коллекция</a>
+            <a href="#" class="footer__link link">Трендовая одежда</a>
+            <a href="#" class="footer__link link">Истории Fashun</a>
+            <a href="#" class="footer__link link">Отзывы клиентов</a>
+            <a href="#" class="footer__link link">Вся одежда</a>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Сервисы</h3>
+            <a href="#" class="footer__link link">Рассрочка на 6 мес</a>
+            <a href="#" class="footer__link link">Кредит на 12 мес</a>
+            <a href="#" class="footer__link link">Доставка по РФ</a>
+            <a href="#" class="footer__link link">Возврат покупок</a>
+            <a href="#" class="footer__link link">Акции и кэшбек</a>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Компания</h3>
+            <a href="#" class="footer__link link">Об Ehya</a>
+            <a href="#" class="footer__link link">Правила сайта</a>
+            <a href="#" class="footer__link link">Обработка данных</a>
+            <a href="#" class="footer__link link">Вакансии</a>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Контакты</h3>
+            <a href="#" class="footer__link link">Группа Фейсбук</a>
+            <a href="#" class="footer__link link">Канал Youtube</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="booking-modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: Close">
+      </a>
+      <h3 class="modal__title modal__title--mb3">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2" required>
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" minlength="16"
+          required>
+        <input type="email" class="input modal__input " placeholder="Your email*" name="email" required>
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
+  <!--/.main-->
+</body>

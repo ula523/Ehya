@@ -1,0 +1,90 @@
+.trends
+  padding-bottom: 110px
+  &-container
+    max-width: 1132px
+  &__header
+    display: flex
+    justify-content: space-between
+    padding-bottom: 52px
+  &__title
+    margin: 0
+    max-width: 500px
+  &-content
+    display: none
+    &--active
+      display: block
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__images
+    width: 260px
+    height: 350px
+    border-radius: 8px
+    object-fit: cover
+  &__subtitle
+    font-family: "hkgrotesk-bold", serif
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark-blue
+    margin-top: 17px
+    margin-left: 12px
+    margin-bottom: 6px
+  &__price
+    margin-right: 170px
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $grey-text
+    margin-left: 10px
+    &-block
+      display: flex
+      align-items: center
+      margin-bottom: 46px
+  &__icon
+    width: 20px
+    height: 20px
+.tabs
+  margin: 0
+  margin-top: 23px
+  display: flex
+  &__item
+    margin-left: 38px
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: $grey-text
+    cursor: pointer
+    &--active
+      font-weight: bold
+      color: $dark-blue
+.block-link
+  background-color: $blue
+  width: 260px
+  height: 350px
+  display: flex
+  flex-direction: column
+  padding-top: 125px
+  padding-left: 23px
+  padding-right: 23px
+  align-items: center
+  border-radius: 8px
+  &:hover
+    background-color: $dark-blue
+  &__icon
+    width: 28px
+    height: 37px
+  &__text
+    margin-top: 20px
+    font-family: "hkgrotesk-bold", serif
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $white

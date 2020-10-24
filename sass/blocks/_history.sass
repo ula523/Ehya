@@ -1,0 +1,90 @@
+.history
+  padding-bottom: 100px
+  &__container
+    max-width: 1150px
+    margin: auto
+    &-block
+      padding-top: 128px
+      display: flex
+      justify-content: space-between
+  &-description
+    margin-right: 96px
+  &__title
+    margin-top: 28px
+    margin-bottom: 30px
+    width: 337px
+  &__text
+    width: 392px
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $grey-text
+    margin: 0
+    margin-bottom: 50px
+  &-swiper
+    max-width: 671px
+  &-block
+    display: flex
+    &__item
+      margin-right: 20px
+
+    &__image
+      border-radius: 8px 8px 0 0
+      width: 312px
+      height: 317px
+
+    &__description
+      background-color: $light
+      margin-top: -20px
+      width: 312px
+      padding: 18px 32px 20px 20px
+      position: sticky
+      top: 87%
+      margin-left: 10px
+
+    &__text
+      font-family: "hkgrotesk-medium"
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $dark-blue
+      margin: 0
+      margin-bottom: 20px
+    &__link
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $blue
+      &:hover
+        color: $dark-blue
+  &-buttons
+    display: flex
+  &__button
+    width: 56px
+    height: 56px
+    background-repeat: no-repeat
+    border: none
+    cursor: pointer
+    z-index: 99
+    &:hover
+      outline: none
+
+    &--prev
+      background-image: url(../img/prev.svg)
+      background-size: contain
+      margin-right: 20px
+
+    &--next
+      background-image: url(../img/next.svg)
+      background-size: contain
+
+    &--active
+      -webkit-filter: invert(100%)
+      filter: invert(100%)
+.line
+  border: 1px solid #E5EAF4
+  margin: 0
+  margin-top: 23px

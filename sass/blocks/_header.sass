@@ -1,0 +1,61 @@
+.header
+  padding-top: 26px
+  padding-bottom: 26px
+  position: fixed
+  background-color: #fff
+  top: 0
+  left: 0
+  right: 0
+  height: 100px
+  z-index: 100
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+.logo
+  min-width: 90px
+  min-height: 28px
+.navbar
+  display: flex
+  justify-content: space-between
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__link
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $dark-blue
+    margin-left: 40px
+    &:hover
+      color: $blue
+  &__button
+    margin-left: 50px
+    border: 2px solid $blue
+    padding: 13px 24px
+    border-radius: 8px
+    color: $blue
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    &:hover
+      background-color: $blue
+      color: $white
+.menu
+  &-button
+    display: none
+
+.mobile-menu
+  padding-top: 36px
+  padding-left: 24px
+  padding-right: 24px
+  padding-bottom: 36px
+  position: fixed
+  top: 10px
+  left: 8px
+  right: 8px
+  background-color: #fff
+  visibility: hidden
+  opacity: 0

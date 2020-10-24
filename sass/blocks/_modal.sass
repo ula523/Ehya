@@ -1,0 +1,76 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden //Окно скрыто
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    padding: 33px 68px
+    background-color: $dark-blue
+    transform: translate(-50%, -50%)
+    color: $light
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden //Окно скрыто
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    color: $light
+    text-transform: uppercase
+    margin-bottom: 15px
+    text-align: center
+  &__form
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+  &__input
+    width: 100%
+    margin-top: 15px
+    border-radius: 4px
+    padding: 12px 22px
+    border: none
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    border-radius: 4px
+    padding: 12px 22px
+  &__button
+    margin: auto
+    margin-top: 40px
+    padding: 10px 22px
+    background-color: $white
+    color: $dark-blue
+    border: none
+    &:hover
+      background-color: $dark-blue
+      color: $white
+      border: 1px solid $white

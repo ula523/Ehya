@@ -1,0 +1,107 @@
+*
+  box-sizing: border-box
+
+@font-face
+  font-family: "hkgrotesk-bold"
+  src: url("../fonts/hkgrotesk-bold.woff") format("woff"),
+  url("../fonts/hkgrotesk-bold.woff2") format("woff2"),
+  url("../fonts/hkgrotesk-bold.ttf") format("truetype")
+  font-weight: 700
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "hkgrotesk-medium"
+  src: url("../fonts/hkgrotesk-medium.woff") format("woff"),
+  url("../fonts/hkgrotesk-medium.woff2") format("woff2")
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "hkgrotesk-regular"
+  src: url("../fonts/hkgrotesk-regular.woff") format("woff"),
+  url("../fonts/hkgrotesk-regular.woff2") format("woff2")
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+body
+  font-family: 'Open Sans', sans-serif
+  font-feature-settings: "locl" 0
+
+img
+  max-width: 100%
+li
+  list-style: none
+a
+  text-decoration: none
+  color: inherit
+.container
+  max-width: 1140px
+  margin: auto
+.tag
+  font-weight: 600
+  font-size: 14px
+  line-height: 20px
+  color: $green
+  text-transform: uppercase
+  background: rgba(54, 179, 126, 0.1)
+  border-radius: 2000px
+  padding: 6px 16px
+.title
+  font-family: "hkgrotesk-bold"
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 60px
+  letter-spacing: 0.2px
+  color: $dark-blue
+.button
+  font-weight: bold
+  font-size: 18px
+  line-height: 25px
+  color: $white
+  background-color: $dark-blue
+  border-radius: 8px
+  cursor: pointer
+  border: none
+  &:hover
+    background-color: $hover-button
+    color:
+.invalid
+  color: $error
+  border-bottom: 1px solid $error
+  font-size: 14px
+  line-height: 24px
+  position: sticky
+  font-weight: 500
+
+.thanks
+  padding-top: 120px
+  padding-bottom: 20px
+  &__button
+    padding: 12px 22px
+  &__text
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $grey-text
+    max-width: 652px
+    margin-top: 0
+    margin-bottom: 67px
+#toTop
+  width: 100px
+  border: 1px solid #ccc
+  background: #F2F2F2
+  text-align: center
+  padding: 5px
+  position: fixed
+  bottom: 20px
+  right: 20px
+  cursor: pointer
+  display: none
+  color: #333
+  font-family: verdana
+  font-size: 11px
+  z-index: 100

@@ -1,0 +1,57 @@
+.subscribe
+  padding-top: 96px
+  padding-bottom: 84px
+  background-image: url(../img/Base.png)
+  background-color: $blue
+  background-repeat: no-repeat
+  width: 100%
+  position: relative
+  &::after //песевдоэлемент
+    content: ''
+    position: absolute
+    height: 100%
+    top: 0
+    left: 70%
+    right: 0
+    z-index: 1
+    background-image: url(../img/Oval.svg)
+    background-repeat: no-repeat
+
+  &-container
+    padding-right: 64px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__title
+    margin: 0
+    color: $white
+    margin-bottom: 14px
+  &__text
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $white
+    width: 438px
+  &__form
+    margin-top: -12px
+    width: 447px
+    position: relative
+    right: 0
+    z-index: 10
+  &__input
+    background-image: url(../img/email.svg)
+    background-repeat: no-repeat
+    background-position: 20px 23px
+    background-position-y: center
+    padding: 17px 45% 17px 48px
+    width: 447px
+    border-radius: 4px
+    border: none
+  &__button
+    padding: 11px 27px
+    position: absolute
+    right: 4px
+    top: 4px
+    bottom: 4px
+    border-radius: 4px
